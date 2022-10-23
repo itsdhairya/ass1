@@ -1,0 +1,42 @@
+
+<%- include ../partials/header -%>
+
+<%- include ../partials/navbar -%>  
+
+<div class="container">
+    <div class="pages row">
+        <h1><%= title %></h1>
+
+        <form class="item-form form" action="/user/signin" method="POST">
+            <input type="hidden" name="id" value="">
+
+            <label for="username">Username</label>
+            <input type="text" class="form-control"
+                id="username"
+                name="username" 
+                value=""
+                required>
+
+            <label for="password">Password</label>
+            <input class="form-control"
+            id="password"
+            type="password"
+            name="password" 
+            value=""
+            required>
+
+            <label></label>
+            <button class="custom-button" type="submit">
+                Login
+            </button>
+            
+            <label></label>
+            <a href="/user/signup" class="custom-button">
+                Sign Up
+            </a>
+
+        </form>
+    </div>
+</div>
+
+<%- include ../partials/footer %>

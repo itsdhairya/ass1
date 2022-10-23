@@ -1,0 +1,43 @@
+
+<%- include ../partials/header -%>
+
+<%- include ../partials/navbar -%>  
+
+<main class="pages container">
+<div class="row">
+    <h1><%= title %>
+        <a href="/contacts/add" class="custom-button">
+            <img class="icons add-icon" src="/images/add.png">
+        </a>     
+    </h1>
+    
+    <table class="table table-bordered table-hover table-languages">
+        <!-- Header Row-->
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th class="fit">Actions</th>
+        </tr>
+
+        <!-- Autogenerate Rows -->
+        <% for(let i = 0; i < ContactsList.length; i++) { %>
+            <tr>
+                <td><%= ContactsList[i].name %></td>
+                <td><%= ContactsList[i].phone %></td>
+                <td><%= ContactsList[i].email %></td>
+                <td class="fit">
+                    <a class="custom-button icons-container" href="/contacts/edit/<%= ContactsList[i]._id %>">
+                        <img class="icons" src="/images/edit.png">
+                    </a>
+                    <a class="custom-button icons-container delete" href="/contacts/delete/<%= ContactsList[i]._id %>">
+                        <img class="icons" src="/images/bin.png">
+                    </a>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</div>
+</main>
+
+<%- include ../partials/footer %>

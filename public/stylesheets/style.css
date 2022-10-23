@@ -1,0 +1,360 @@
+
+body {
+  text-align: center;
+  font-family: Helvetica;
+  background-color: #ded0d6;
+  scroll-behavior: smooth;
+  padding-bottom: 2%;
+}
+
+.custom-button {
+  background-color: #8c7e57;
+  border-radius: 5px;
+  padding: 1.5% 1%;
+  margin: 0 2%;
+}
+
+.custom-button:hover {
+  background-color: rgba(197, 191, 191, 0.7);
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0;
+}
+
+nav a {
+  color: hsla(0,0%,100%,0.7);
+}
+
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-brand-container {
+  width: 35%;
+}
+
+.logo {
+  width: 25%;
+  border-radius: 10px;
+  opacity: 0.95;
+}
+
+.nav-item {
+  padding: 1% 0 1%;
+}
+
+.nav-links {
+  padding: 0% 1.2vw;
+  margin: 2px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.nav-links:hover {
+  color: rgb(237, 237, 237);
+}
+
+.scrolled {
+  background-color: #fffbf0;
+  transition: 800ms;
+}
+
+.scrolled-text {
+  color: black;
+  transition: 800ms;
+}
+
+/* HEADER */
+.header {
+  background: rgb(0,0,0);
+  background: linear-gradient(110deg, rgb(169, 153, 170) 70%, #071214 100%);
+  padding: 9% 0 12%;
+  margin: 0 auto!important;
+  height: 90vh;
+}
+
+.header-picture-container {
+  padding: 0 5%;
+  text-align: right;
+}
+
+.header-portfolio-picture {
+  width: 60%;
+  border-radius: 100%;
+}
+
+.header-description-container {
+  padding: 3% 15% 0 0;
+  text-align: left;
+}
+
+.header-name {
+  letter-spacing: 6px;
+  word-spacing: 6px;
+  margin-bottom: 1rem;
+}
+
+.header-tagline {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: hsla(0,0%,100%,0.5);
+}
+
+.header-tagline span {
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+
+.header-button {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.header-button span {
+  margin: 0 auto;
+  letter-spacing: 2px;
+  background-color: #38889d;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  
+}
+
+.header-button span:hover {
+  background-color: rgba(223, 223, 223, 0.5);
+}
+
+/* ABOUT ME */
+#about-me {
+  margin: 2% auto 3%;
+  width: 60%;
+}
+
+.about-me {
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.about-me-header {
+  margin: 1rem;
+  letter-spacing: 6px;
+}
+
+#about-me .header-portfolio-picture {
+  width: 30%;
+}
+
+.blue-button span {
+  margin: 0 auto;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: rgb(115, 88, 96);
+
+}
+
+.blue-button span:hover {
+  background-color: rgba(111, 98, 106, 0.8);
+}
+
+.languages-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(120, 101, 118, 0.85);
+  border-radius: 10px;
+  padding: 2% 0 0.5%;
+  color: rgba(105, 90, 90, 0.9);
+}
+
+.table-languages {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1rem;
+  color: hsla(0,0%,100%,0.8);
+  background-color: rgba(118, 118, 118, 0.85);
+}
+
+.table-languages td {
+  border: none;
+}
+
+.table-languages img {
+  padding: 0 5px;
+}
+
+/* SERVICES */
+#services {
+  margin: 2% auto 3%;
+  width: 60%;
+}
+
+/* PROJECTS PORTFOLIO */
+#projects {
+  /* background-color: rgba(43,103,119); */
+  margin: 0% auto 3%;
+  width: 75%;
+}
+
+.project-heading {
+  padding: 1%;
+  letter-spacing: 6px;
+  color: #fffbf0;
+  color: black;
+  margin: 1rem;
+  letter-spacing: 6px;
+}
+
+.card {
+  background-color: white;
+  margin: 2% auto ;
+  border-radius: 10px;
+}
+
+.card:hover {
+    background-color: hsla(0,0%,100%,0.7);
+}
+
+.card-body {
+  padding-bottom: 0.75rem;
+}
+
+.project-label {
+  position: relative;
+}
+
+.portfolio-img {
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
+/* CONTACT ME */
+.contact-me  {
+  background-color: #fffbf0;
+  padding: 2% 0 2%;
+}
+
+.contact-link {
+  padding: 0.5rem 1rem;
+  margin: 2px;
+  position: relative;
+  letter-spacing: 1px;
+  color: white;
+  color: black;
+}
+
+.contact-link:hover {
+color: black;
+}
+
+.table-contact-me {
+  margin: 0 auto 2%;
+  width: 60%;
+  color: black;
+  /* background-color: rgba(43, 103, 119, 0.85); */
+  border-radius: 10px;
+  padding: 2% 0 0.5%;
+}
+
+/* CONTACT FORM */
+#contact-me-form {
+  width: 60%;
+  margin: 4% auto 0;
+  padding: 0rem;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px;
+  margin: 0.5% auto 1%;
+}
+
+fieldset input, textarea {
+  width: 80%;
+  resize: none;
+}
+
+label {
+  text-align: right;
+}
+
+.submit-button {
+  font-weight: bold;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  background-color: rgba(43,103,119);
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 1rem;
+}
+
+.submit-button:hover {
+  background-color:	rgba(43,103,119,0.8);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #fffbf0;
+  padding: 0.6% 0 0.5%;
+  background-color: rgb(0, 0, 0);
+  color: hsla(0,0%,100%,0.7);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.row a {
+  color: black;
+}
+
+.row a:hover {
+  color: black;
+}
+
+/* BUSINESS CONTACTS */
+
+.pages h1 {
+  margin: 3% auto;
+}
+
+.icons {
+  width: 10%;
+  padding: 0;
+}
+
+.add-icon {
+  width: 3%;
+}
+
+.table td.fit, .table th.fit {
+  white-space: nowrap;
+  width: 25%;
+}
+
+/* ADD/EDIT FORM */
+
+.item-form {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px;
+  margin: 0.5% auto 1%;
+  width: 60%;
+}
+
+.flash {
+  color: red;
+}

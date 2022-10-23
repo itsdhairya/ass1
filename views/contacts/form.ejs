@@ -1,0 +1,47 @@
+
+<%- include ../partials/header -%>
+
+<%- include ../partials/navbar -%>  
+
+
+<div class="container">
+    <div class="pages row">
+        <h1><%= title %></h1>
+
+        <form class="item-form form" method="POST">
+            <input type="hidden" name="id" value="<%= item._id %>">
+
+            <label for="itemName">Name</label>
+            <input type="text" class="form-control"
+                id="itemName"
+                placeholder="John Doe"
+                name="name" 
+                value="<%= item.name %>"
+                required>
+
+            <label for="itemPhone">Phone Number</label>
+            <input class="form-control"
+                id="ItemPhone"
+                placeholder="000-000-0000"
+                name="phone" 
+                value="<%= item.phone %>"
+                required>
+
+            <label for="itemEmail">Email</label>
+            <input type="text" class="form-control"
+                id="itemEmail"
+                placeholder="email@email.ca"
+                name="email" 
+                value="<%= item.email %>">
+
+            <label></label>
+            <button class="custom-button" type="submit">Submit</button>
+            
+            <label></label>
+            <a href="/contacts" class="custom-button">Cancel</a>
+
+        </form>
+    </div>
+</div>
+
+<%- include ../partials/footer %>
