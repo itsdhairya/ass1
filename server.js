@@ -83,6 +83,9 @@ function onError(error) {
 /**
  * Event listener for HTTP server "listening" event.
  */
+ setInterval(function() {
+  http.get("https://personalwebsi.herokuapp.com/");
+}, 100000); // every 5 minutes (300000)
 
 function onListening() {
   var addr = server.address();
