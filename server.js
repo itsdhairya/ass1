@@ -85,7 +85,7 @@ function onError(error) {
  */
  setInterval(function() {
   http.get("https://personalwebsi.herokuapp.com/");
-}, 1000); // every 5 minutes (300000)
+}, 100000000000); // every 5 minutes (300000)
 
 function onListening() {
   var addr = server.address();
